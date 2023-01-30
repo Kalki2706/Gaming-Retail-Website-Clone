@@ -6,5 +6,4 @@ Roadmap / Skills you need to learn :
 2) Learn EcoSystem recommended :- Ehereum Blockchain
 3) Programming Language :- Solidity & for extras JavaScript
 
-//Gonna Update when I'll learn more 😃
 Finding resources again not studied anything about blockchain
