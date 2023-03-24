@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #000123;
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Octosquare";
+  src: url(fonts/TTOctosquaresComp-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Octosquare Condens";
+  src: url(fonts/TTOctosquaresCond-Regular.ttf);
+}
+
+@-moz-document url-prefix() {
+  /* Disable scrollbar Firefox */
+  html {
+    scrollbar-width: none;
+  }
+}
+body {
+  margin: 0; /* remove default margin */
+  scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+  -ms-overflow-style: none; /* Disable scrollbar IE 10+ */
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+}
+
+.sec-one {
+  background-image: url(img/game_consoles.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 1080px;
+  background-attachment: scroll;
+  box-shadow: inset 0px -200px 250px -40px #000;
+}
+
+.first-page-art {
+  margin: 100px 0px 0px 400px;
+  font-family: "Octosquare";
+}
+
+.com-name {
+  font-family: "Octosquare Condens";
+  font-size: 30px;
+  width: 100px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 32px;
+}
+
+.heading {
+  font-size: 150px;
+  width: 750px;
+  font-weight: 100;
+  margin: 50px 0 40px 0;
+  line-height: 150px;
+}
+
+.see-more-btn {
+  background-color: #ff0f7b;
+  padding: -20px 0px 10px 35px;
+  position: absolute;
+  border-radius: 40px;
+}
+
+.shop-link {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  letter-spacing: 2px;
+  margin: -20px;
+}
+
+.arrow {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.see-more-btn:hover {
+  background-color: #270011;
+}
