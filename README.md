@@ -1,1 +1,1 @@
-# Gaming Reatail Website
+# Gaming Retail Website
