@@ -66,18 +66,18 @@ body::-webkit-scrollbar {
   font-size: 150px;
   width: 750px;
   font-weight: 100;
-  margin: 50px 0 40px 0;
+  margin: 50px 0 50px 0;
   line-height: 150px;
 }
 
 .shop-now {
   background-color: #ff0f7b;
-  padding: 15px 60px 15px 30px;
+  padding: 15px 100px 15px 30px;
   position: absolute;
   border: none;
   border-radius: 40px;
   width: 100px;
-  font-size: 24px;
+  font-size: 25px;
   text-decoration: none;
   color: #fff;
   letter-spacing: 2px;
@@ -90,7 +90,7 @@ body::-webkit-scrollbar {
   width: 50px;
   height: 50px;
   color: #ffffff;
-  margin: -6px 0px 0px 120px;
+  margin: -6px 0px 0px 160px;
   transition: color 0.2s;
   border: none;
 }
@@ -108,15 +108,19 @@ body::-webkit-scrollbar {
 
 .sec-sec {
   height: 1080px;
-  background-color: #685ba0;
+}
+
+.sixth-page-heading,
+.page-sec-art {
+  text-align: center;
 }
 
 .page-sec-art {
-  text-align: center;
   padding: 230px 0px;
 }
 
-.sec-page-heading {
+.sec-page-heading,
+.sixth-page-heading {
   font-size: 120px;
   font-family: "Octosquare Condens";
   font-weight: 100;
@@ -160,23 +164,30 @@ body::-webkit-scrollbar {
   color: red;
 }
 
-.sec-third {
+.sec-third,
+.sec-fourth,
+.sec-fifth {
   height: 1080px;
-  background-color: rgb(106, 112, 112);
 }
 
-.third-img {
+.third-img,
+.fourth-img,
+.fifth-img {
   width: 700px;
   height: 800px;
   margin: 140px 0 0 250px;
 }
 
-.page-third-art {
+.page-third-art,
+.page-fourth-art,
+.page-fifth-art {
   float: right;
   margin: 250px 300px 0 0;
 }
 
-.third-page-heading {
+.third-page-heading,
+.fourth-page-heading,
+.fifth-page-heading {
   font-family: "Octosquare Condens";
   width: 500px;
   font-weight: 100;
@@ -187,7 +198,9 @@ body::-webkit-scrollbar {
   letter-spacing: 2px;
 }
 
-.third-page-para {
+.third-page-para,
+.fourth-page-para,
+.fifth-page-para {
   font-family: "Octosquare";
   letter-spacing: 1.5px;
   width: 450px;
@@ -197,6 +210,105 @@ body::-webkit-scrollbar {
 }
 
 .see-more {
-  font-size: 24px;
+  font-size: 26px;
   font-family: "Octosquare";
+}
+
+.sec-seven {
+  background-image: url(img/mouse-min.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 1000px;
+  background-attachment: scroll;
+}
+
+.send-msg {
+  font-size: 150px;
+  font-family: "Octosquare";
+  font-weight: 100;
+  margin: 200px 0 0 250px;
+  width: 500px;
+  line-height: 120px;
+  letter-spacing: 2px;
+}
+
+.com-details {
+  font-size: 30px;
+  font-family: "Octosquare Condens";
+  width: 350px;
+  line-height: 50px;
+  margin: 10px 340px 0 auto;
+}
+
+.ph-num {
+  margin-bottom: 50px;
+}
+
+.website-link {
+  text-decoration: none;
+  color: #ff0f7b;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  margin-right: 410px;
+}
+
+.fb,
+.ig,
+.tweet,
+.yt {
+  color: #685ba0;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  padding: 10px 10px 0 0;
+  margin-top: 30px;
+  transition: color 0.2s;
+}
+
+.fb:hover,
+.tweet:hover,
+.ig:hover,
+.yt:hover {
+  color: #c50303;
+}
+
+.sec-six {
+  height: 720px;
+  background-color: #000123;
+  padding: 150px 0;
+}
+
+.review-one,
+.review-two,
+.review-three {
+  display: inline-block;
+  margin: 100px auto 0 230px;
+}
+
+.game-name {
+  color: #ff0f7b;
+  font-size: 45px;
+  font-family: "Octosquare";
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* .review-two {
+} */
+/* display: block; */
+
+.user-name,
+.review {
+  width: 285px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: "Octosquare";
+  color: #fff;
 }
