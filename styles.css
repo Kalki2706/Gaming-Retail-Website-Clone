@@ -1,315 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  /* Fonts */
+
+  /* Primary Colors */
+  --light-purple: #8c52ff;
+  --black: #000;
+  --white: #fff;
+
+  /* Neutral Colors */
+  --dark-blue: #000123;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
-  background-color: #000123;
-  color: #fff;
-}
-
-@font-face {
-  font-family: "Octosquare";
-  src: url(fonts/TTOctosquaresComp-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Octosquare Condens";
-  src: url(fonts/TTOctosquaresCond-Regular.ttf);
-}
-
-@-moz-document url-prefix() {
-  /* Disable scrollbar Firefox */
-  html {
-    scrollbar-width: none;
-  }
+  font-size: 62.5%;
 }
 
 body {
-  margin: 0; /* remove default margin */
-  scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
-  -ms-overflow-style: none; /* Disable scrollbar IE 10+ */
-  overflow-y: scroll;
+  font-size: 1.6rem;
+  margin: 0;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100dvh;
+  background: var(--black);
+  color: var(--white);
 }
 
-body::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+img {
+  width: 100%;
 }
 
-.sec-one {
-  background-image: url(img/game_consoles-min.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  height: 1080px;
-  background-attachment: scroll;
-  box-shadow: inset 0px -200px 250px -40px #000;
-}
-
-.first-page-art {
-  margin: 100px 0px 0px 400px;
-  font-family: "Octosquare";
-}
-
-.com-name {
-  font-family: "Octosquare Condens";
-  font-size: 30px;
-  width: 100px;
-  font-weight: 100;
-  letter-spacing: 2px;
-  line-height: 32px;
-}
-
-.heading {
-  font-size: 150px;
-  width: 750px;
-  font-weight: 100;
-  margin: 50px 0 50px 0;
-  line-height: 150px;
-}
-
-.shop-now {
-  background-color: #ff0f7b;
-  padding: 15px 100px 15px 30px;
-  position: absolute;
-  border: none;
-  border-radius: 40px;
-  width: 100px;
-  font-size: 25px;
+a {
   text-decoration: none;
-  color: #fff;
-  letter-spacing: 2px;
-  margin: -10px;
-  transition: color 0.2s, background-color 0.2s;
-}
-
-.arrow {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  color: #ffffff;
-  margin: -6px 0px 0px 160px;
-  transition: color 0.2s;
-  border: none;
-}
-
-.shop-now:hover {
-  color: #c50303;
-  background-color: #270011;
-  cursor: pointer;
-}
-
-.arrow:hover {
-  color: #685ba0;
-  border: none;
-}
-
-.sec-sec {
-  height: 1080px;
-}
-
-.sixth-page-heading,
-.page-sec-art {
-  text-align: center;
-}
-
-.page-sec-art {
-  padding: 230px 0px;
-}
-
-.sec-page-heading,
-.sixth-page-heading {
-  font-size: 120px;
-  font-family: "Octosquare Condens";
-  font-weight: 100;
-}
-
-.sec-page-para {
-  font-family: "Octosquare Condens";
-  width: 1100px;
-  margin: 60px auto 210px auto;
-  letter-spacing: 1.5px;
-  font-size: 40px;
-  font-weight: 100;
-  line-height: 55px;
-}
-
-.highlight-head,
-.game-collection,
-.down-arrow {
-  color: #ff0f7b;
-  transition: color 0.2s;
-}
-
-.game-collection {
-  text-decoration: none;
-  font-family: "Octosquare";
-  font-size: 55px;
-  letter-spacing: 2px;
-}
-
-.down-arrow {
-  width: 60px;
-  height: 70px;
-  display: block;
-  margin: 10px auto;
-  cursor: pointer;
-  border: none;
-}
-
-.game-collection:hover,
-.down-arrow:hover {
-  color: red;
-}
-
-.sec-third,
-.sec-fourth,
-.sec-fifth {
-  height: 1080px;
-}
-
-.third-img,
-.fourth-img,
-.fifth-img {
-  width: 700px;
-  height: 800px;
-  margin: 140px 0 0 250px;
-}
-
-.page-third-art,
-.page-fourth-art,
-.page-fifth-art {
-  float: right;
-  margin: 250px 300px 0 0;
-}
-
-.third-page-heading,
-.fourth-page-heading,
-.fifth-page-heading {
-  font-family: "Octosquare Condens";
-  width: 500px;
-  font-weight: 100;
-  color: #ff0f7b;
-  font-size: 80px;
-  line-height: 80px;
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-}
-
-.third-page-para,
-.fourth-page-para,
-.fifth-page-para {
-  font-family: "Octosquare";
-  letter-spacing: 1.5px;
-  width: 450px;
-  font-size: 40px;
-  line-height: 50px;
-  margin-bottom: 80px;
-}
-
-.see-more {
-  font-size: 26px;
-  font-family: "Octosquare";
-}
-
-.sec-seven {
-  background-image: url(img/mouse-min.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  height: 1000px;
-  background-attachment: scroll;
-}
-
-.send-msg {
-  font-size: 150px;
-  font-family: "Octosquare";
-  font-weight: 100;
-  margin: 200px 0 0 250px;
-  width: 500px;
-  line-height: 120px;
-  letter-spacing: 2px;
-}
-
-.com-details {
-  font-size: 30px;
-  font-family: "Octosquare Condens";
-  width: 350px;
-  line-height: 50px;
-  margin: 10px 340px 0 auto;
-}
-
-.ph-num {
-  margin-bottom: 50px;
-}
-
-.website-link {
-  text-decoration: none;
-  color: #ff0f7b;
-  letter-spacing: 2px;
-}
-
-nav {
-  display: flex;
-  justify-content: right;
-  align-items: end;
-  margin-right: 410px;
-}
-
-.fb,
-.ig,
-.tweet,
-.yt {
-  color: #685ba0;
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  padding: 10px 10px 0 0;
-  margin-top: 30px;
-  transition: color 0.2s;
-}
-
-.fb:hover,
-.tweet:hover,
-.ig:hover,
-.yt:hover {
-  color: #c50303;
-}
-
-.sec-six {
-  height: 720px;
-  background-color: #000123;
-  padding: 150px 0;
-}
-
-.review-one,
-.review-two,
-.review-three {
-  display: inline-block;
-  margin: 100px auto 0 230px;
-}
-
-.game-name {
-  color: #ff0f7b;
-  font-size: 45px;
-  font-family: "Octosquare";
-  font-weight: 700;
-  letter-spacing: 2px;
-  width: 15.625rem;
-}
-
-/* .review-two {
-} */
-/* display: block; */
-
-.user-name,
-.review {
-  width: 285px;
-  font-size: 40px;
-  letter-spacing: 2px;
-  font-family: "Octosquare";
   color: #fff;
 }
