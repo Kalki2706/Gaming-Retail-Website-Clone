@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Cosmic';
+  src: url(../assets/fonts/cosmic.ttf);
+}
+
+@font-face {
+  font-family: 'Octosquares Compressed';
+  src: url(../assets/fonts/octosquares-compressed-regular.ttf);
+}
+
+@font-face {
+  font-family: 'Octosquares Condensed';
+  src: url(../assets/fonts/octosquares-condensed-regular.ttf);
+}

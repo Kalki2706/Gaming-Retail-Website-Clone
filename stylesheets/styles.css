@@ -1,0 +1,130 @@
+:root {
+  /* Fonts */
+  --cosmic: 'Cosmic', sans-serif, serif, Roboto;
+  --oc-comp: 'Octosquares Compressed', sans-serif, serif, Roboto;
+  --oc-con: 'Octosquares Condensed', sans-serif, serif, Roboto;
+
+  /* Primary Colors */
+  --light-purple: #8c52ff;
+  --black: #000;
+  --white: #fff;
+
+  /* Neutral Colors */
+  --dark-blue: #000123;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--oc-con);
+  margin: 0;
+  width: 100%;
+  min-height: 100dvh;
+  background: var(--black);
+  color: var(--white);
+}
+
+.width {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.--btn {
+  font-size: clamp(1.5rem, 1.6vw, 2.25rem);
+  font-family: var(--oc-comp);
+  text-transform: uppercase;
+  background: var(--light-purple);
+  color: var(--white);
+  padding: 0.5em 1.25em;
+  gap: 1.5rem;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.--oc-comp {
+  font-family: var(--oc-comp);
+}
+
+.df {
+  display: flex;
+  align-items: center;
+}
+
+.clt__txt {
+  color: var(--light-purple);
+}
+
+header,
+.grad__bg {
+  min-height: 100dvh;
+  width: 100vw;
+}
+
+/* Header Styling */
+header {
+  background: url(../assets/img/typing.png) center/cover no-repeat;
+}
+
+.company__name {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-family: var(--cosmic);
+  font-weight: bold;
+  display: block;
+  max-width: 137px;
+}
+
+.heading {
+  font-size: clamp(5rem, 10vw, 8vw);
+  font-weight: 500;
+  max-width: 800px;
+  line-height: 0.9;
+  letter-spacing: 2px;
+  margin: 0.3em 0 0.75em;
+}
+
+.arrow-icon {
+  width: 30px;
+  height: 30px;
+  stroke: var(--white);
+}
+
+/* Grad__bg section */
+.grad__bg {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 27, 56, 1) 5%,
+    rgba(0, 1, 35, 1) 100%
+  );
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  font-size: 7rem;
+}
+
+.link__df {
+  flex-direction: column;
+}
