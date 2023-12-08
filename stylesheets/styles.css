@@ -19,6 +19,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -51,12 +56,12 @@ a {
 }
 
 .--btn {
-  font-size: clamp(1.5rem, 1.6vw, 2.25rem);
+  font-size: clamp(1.85rem, 5vw, 2.5rem);
   font-family: var(--oc-comp);
   text-transform: uppercase;
   background: var(--light-purple);
   color: var(--white);
-  padding: 0.5em 1.25em;
+  padding: 0.25em 1em;
   gap: 1.5rem;
   border: none;
   border-radius: 5rem;
@@ -80,6 +85,11 @@ header,
 .grad__bg {
   min-height: 100dvh;
   width: 100vw;
+}
+
+.para {
+  font-size: clamp(1.5rem, 4.5vw, 2rem);
+  line-height: 1.6;
 }
 
 /* Header Styling */
@@ -112,19 +122,28 @@ header {
 
 /* Grad__bg section */
 .grad__bg {
-  background: linear-gradient(
-    180deg,
-    rgba(27, 27, 56, 1) 5%,
-    rgba(0, 1, 35, 1) 100%
-  );
+  background: linear-gradient(180deg, rgb(33, 33, 63) 1%, rgb(0, 1, 29) 100%);
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
 h2 {
-  font-size: 7rem;
+  font-size: clamp(3.8rem, 10vw, 6.5rem);
+  line-height: 1.05;
+  font-weight: normal;
+  margin: 0.2em 0 0.5em;
+}
+
+.grad__para {
+  max-width: 495px;
+  margin-bottom: clamp(2.5em, 10vw, 8em);
 }
 
 .link__df {
   flex-direction: column;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 6vw, 2.5rem);
+  letter-spacing: 1.5px;
+  font-weight: 900;
 }
