@@ -106,12 +106,12 @@ header {
 }
 
 .heading {
-  font-size: clamp(5rem, 10vw, 8vw);
-  font-weight: 500;
-  max-width: 800px;
-  line-height: 0.9;
-  letter-spacing: 2px;
-  margin: 0.3em 0 0.75em;
+  font-size: clamp(5rem, 12vw, 9vw);
+  font-weight: 400;
+  max-width: 770px;
+  line-height: 1;
+  letter-spacing: clamp(2.5px, 7vw, 5px);
+  margin: 0.3em 0 0.5em;
 }
 
 .arrow-icon {
